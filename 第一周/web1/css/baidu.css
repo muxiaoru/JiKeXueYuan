@@ -1,0 +1,33 @@
+body {
+	font:15px arial;
+}
+header
+{
+	overflow: hidden;
+}	
+header nav{
+	width: 550px;
+	float: right;
+}
+header nav a{
+	margin-left: 15px;
+}
+/*主体部分*/
+.content {
+	text-align: center;
+}
+.content input{
+	width: 450px;
+	height: 34px;
+}
+.content button{
+	width: 150px;
+	height:34px;
+}
+/*底部信息*/
+footer{
+	padding-top: 150px;
+}
+footer p{
+	text-align: center;
+}
