@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>极客首页</title>
+    <link href="/favicon.ico" rel="icon" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="less/index.less">
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script src="js/less.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</head>
+
+<body>
+    <!-- 头部star -->
+    <div class="header">
+        <div class="subject">
+            <a class="logo" href="http://www.jikexueyuan.com">
+                <img src="img/1.png" height="40px" width="109px">
+            </a>
+            <div class="lesson">
+                <ul class="lessoncon">
+                    <li><a style="color: #35b558" href="http://www.jikexueyuan.com">首页</a></li>
+                    <li id="school">职业学院
+                        <i class="arrow-icon"></i>
+                        <div class="zhiye">
+                            <h3>前端学院</h3>
+                            <a href="http://www.jikexueyuan.com/zhiye/web"><i class="web-icon"></i>Web 前端工程师</a>
+                            <h3>后端学院</h3>
+                            <a href="http://www.jikexueyuan.com/zhiye/python"><i class="python-icon"></i>Python Web工程师</a>
+                            <a href="http://www.jikexueyuan.com/zhiye/go"><i class="go-icon"></i>Go语言工程师</a>
+                            <h3>移动学院</h3>
+                            <a href="http://www.jikexueyuan.com/zhiye/ios"><i class="ios-icon"></i>iOS工程师</a>
+                        </div>
+                    </li>
+                    <li id="vipLesson">会员课程
+                        <i class="arrow-icon"></i>
+                        <div class="vip-lesson" id="vip">
+                            <a href="http://www.jikexueyuan.com/course/"><i class="kck-icon"></i>课程库<span>2500+</span></a>
+                            <a href="http://ke.jikexueyuan.com/zhiye/"><i class="zyljt-icon"></i>职业路径图<span>9</span></a>
+                            <a href="http://www.jikexueyuan.com/path/"><i class="zstxt-icon"></i>知识体系图<span>24</span></a>
+                            <a href="http://ke.jikexueyuan.com/xilie/"><i class="xlkc-icon"></i>系列课程<span>101</span></a>
+                            <a href="http://www.jikexueyuan.com/tag/"><i class="kcbq-icon"></i>课程标签<span>4000+</span></a>
+                            <a href="http://www.jikexueyuan.com/vip/"><i class="vip-icon"></i>VIP会员购买<span>30/月  260/年</span></a>
+                        </div>
+                    </li>
+                    <li id="community">极客社区
+                        <i class="arrow-icon"></i>
+                        <div class="vip-lesson" id="com">
+                            <a href="http://wenda.jikexueyuan.com"><i class="jswd-icon"></i>技术问答<span>20000+</span></a>
+                            <a href="http://wiki.jikexueyuan.com"><i class="wiki-icon"></i>Wiki<span>351</span></a>
+                            <a href="http://qun.jikexueyuan.com"><i class="sq-icon"></i>社群<span>7000+</span></a>
+                            <a href="http://download.jikexueyuan.com"><i class="zygx-icon"></i>资源下载<span>3000+</span></a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="icon-box">
+                <span class="search-icon" id="searchBtn"></span>
+                <span class="app-icon" id="appicon">
+                    <div class="jike-app" id="jikeApp">
+                        <i class="top-icon"></i>
+                        <img src="img/2.png">
+                    </div>
+                </span>
+                <span class="logged" id="loginlist">
+                    <a href="http://my.jikexueyuan.com/setting/user/"><img src="" id="userpoto"></a>
+                    <i class="year-icon"></i>
+                    <dl class="submenu">
+                        <i style="left:85px;" class="top-icon"></i>
+                        <dd id="getUserLevel">
+                            <a href="http://my.jikexueyuan.com/user/myvip" class="rz-vip"></a>
+                            <a href="http://my.jikexueyuan.com/user/myvip" class="year-vip"></a>
+                        </dd>
+                        <dd><a href="http://xue.jikexueyuan.com/"><i class="xxzx-icon"></i>学习中心</a></dd>
+                        <dd><a href="http://my.jikexueyuan.com/0mgjWqkga"><i class="grzy-icon"></i>个人主页</a></dd>
+                        <dd><a href="http://www.jikexueyuan.com/member/notifications/"><i class="xxtz-icon"></i>消息通知<em class="unread-num">1</em></a></dd>
+                        <dd><a href="http://my.jikexueyuan.com/setting/user/"><i class="zhsz-icon"></i>账号设置</a></dd>
+                        <dd><a href="http://passport.jikexueyuan.com/submit/logout"><i class="tc-icon"></i>退出登录</a></dd>
+                    </dl>
+                </span>
+            </div>
+            <div class="searchbox">
+                <i class="close-btn" id="closeBtn"></i>
+                <i class="search-icon"></i>
+                <input id="webSearch" placeholder="搜索课程、问答或Wiki" value="">
+                <div class="tagbox">
+                    <a href="http://search.jikexueyuan.com/course/?q=Android">Android</a>
+                    <a href="http://search.jikexueyuan.com/course/?q=iOS">iOS</a>
+                    <a href="http://search.jikexueyuan.com/course/?q=HTML5">HTML5</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 头部end -->
+    <!-- 主要内容star -->
+    <div class="middle">
+        <div class="subject">
+            <div class="row1">
+                <div class="col_8">
+                    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+                        </ol>
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                                <img src="img/1.jpg" alt="第一张滚动图片">
+                            </div>
+                            <div class="item">
+                                <img src="img/2.jpg" alt="第二张滚动图片">
+                            </div>
+                            <div class="item">
+                                <img src="img/3.jpg" alt="第三张滚动图片">
+                            </div>
+                            <div class="item">
+                                <img src="img/4.jpg" alt="第四张滚动图片">
+                            </div>
+                            <div class="item">
+                                <img src="img/5.jpg" alt="第五张滚动图片">
+                            </div>
+                        </div>
+                        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col_4">
+                    <div class="column">
+                        <div class="row-md-6" style="width:240px;height:160px;background-color:#e2d5da;">
+                            <div class="user_wel">
+                                <div class="user">
+                                    <a href="http://my.jikexueyuan.com/setting/user">
+                                        <img src="img/headpic.jpg" class="img-circle" style="width: 50px;height:50px">
+                                    </a>
+                                </div>
+                                <div class="wel">
+                                    Hellow,<br/>欢迎成为极客一员</div>
+                            </div>
+                            <div class="enter_zhuce">
+                                <button type="button" class="btn">登陆</button>
+                                <button type="button" class="btn">免费注册</button>
+                            </div>
+                        </div>
+                        <div class="row-md-6" style="margin-top:10px;">
+                            <a href=""><img src="http://ubmcmm.baidustatic.com/media/v1/0f0000I31efoOCeMMNwG30.jpg"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="first">
+                <div class="client">
+                    <a href="http://j.jikexueyuan.com/train/php?huodong=jiuye_php_in" target="_blank">
+                        <img src="img/php.png" style="width:50%;">
+                        <p>PHP工程师就业班</p>
+                    </a>
+                </div>
+                <div class="client">
+                    <a href="http://j.jikexueyuan.com/train/web?huodong=jiuye_web_in" target="_blank">
+                        <img src="img/h5.png" style="width:50%;">
+                        <p>WEB大前端工程师就业班</p>
+                    </a>
+                </div>
+                <div class="client">
+                    <a href="http://j.jikexueyuan.com/train/android?huodong=jiuye_android_in" target="_blank">
+                        <img src="img/android.png" style="width:50%;">
+                        <p>Android工程师就业班</p>
+                    </a>
+                </div>
+                <div class="client">
+                    <a href="http://j.jikexueyuan.com/train/ios?huodong=jiuye_ios_in" target="_blank">
+                        <img src="img/ios.png" style="width:50%;">
+                        <p>iOS工程师就业班</p>
+                    </a>
+                </div>
+            </div>
+            <div class="second">
+                <div class="kc">
+                    <a href="/zhiye/course/10.html?type=7">
+                        <img src="img/plan.jpg">
+                        <div class="skuContainer">
+                            <p class="skuTitle">Web前端实习生成长计划</p>
+                            <p class="skuInfo">71小时&nbsp;&nbsp;|&nbsp;&nbsp;5门课</p>
+                            <span class="skuPrice">¥999.00</span>
+                            <span class="skuThrought">¥2000.00</span>
+                            <span class="skuNum">14人学习</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="kc">
+                    <a href="/zhiye/course/12.html?type=8">
+                        <img src="img/vuejs.jpg">
+                        <div class="skuContainer">
+                            <p class="skuTitle">Vue.js前端框架详解-基础&进阶&实战</p>
+                            <p class="skuInfo">23小时&nbsp;&nbsp;|&nbsp;&nbsp;1门课</p>
+                            <span class="skuPrice">¥499.00</span>
+                            <span class="skuThrought">¥1300.00</span>
+                            <span class="skuNum">58人学习</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="kc">
+                    <a href="/zhiye/course/18.html?type=4">
+                        <img src="img/python.jpg">
+                        <div class="skuContainer">
+                            <p class="skuTitle">基于Python的静态爬虫实战</p>
+                            <p class="skuInfo">13小时&nbsp;&nbsp;|&nbsp;&nbsp;1门课</p>
+                            <span class="skuPrice">¥499.00</span>
+                            <span class="skuThrought">¥1000.00</span>
+                            <span class="skuNum">13人学习</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="kc" style="margin-right: -20px">
+                    <a href="/zhiye/course/22.html?type=6">
+                        <img src="img/go.jpg">
+                        <div class="skuContainer">
+                            <p class="skuTitle">基于Go语言的短链接服务实战</p>
+                            <p class="skuInfo">10小时&nbsp;&nbsp;|&nbsp;&nbsp;1门课</p>
+                            <span class="skuPrice">¥499.00</span>
+                            <span class="skuThrought">¥1000.00</span>
+                            <span class="skuNum">43人学习</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <h2>职业学校</h2>
+            <div class="zhiye_school">
+                <div class="half">
+                    <a href="/zhiye/web">
+                        <img src="img/web.jpg" width="100%">
+                        <i></i>
+                        <span class="school">web前端工程师</span>
+                    </a>
+                </div>
+                <div class="half_3">
+                    <div class="column">
+                        <div style="position: relative;" class="row-md-6">
+                            <a href="/zhiye/python">
+                                <img src="img/bgpython.jpg" style="width:240px;height:130px;">
+                                <i></i>
+                                <span class="python">Python Web工程师</span>
+                            </a>
+                        </div>
+                        <div style="margin-top: 10px;" class="row-md-6">
+                            <a href="/zhiye/go">
+                                <img src="img/bggo.jpg" style="width:240px;height:130px;">
+                                <i></i>
+                                <span class="go">GO语言工程师</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="half_3">
+                    <div class="column">
+                        <div class="row-md-6">
+                            <a href="/zhiye/ios">
+                                <img src="img/bgios.jpg" style="width:240px;height:130px;">
+                                <i></i>
+                                <span class="ios">ios工程师</span>
+                            </a>
+                        </div>
+                        <div style="margin-top: 10px;" class="row-md-6">
+                            <a href="javascript:;">
+                                <img src="img/bgmore.jpg" style="width:240px;height:130px;">
+                                <i></i>
+                                <span class="more">更多职业 敬请期待</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h2>会员课程</h2>
+            <div class="third">
+                <div class="vip">
+                    <a href="/path/android" style="text-decoration: none;">
+                        <img src="img/1_android.png" class="vip_img">
+                        <p class="vip1">Android</p>
+                        <p class="vip2">90门课程</p>
+                    </a>
+                </div>
+                <div class="vip">
+                    <a href="/path/ios" style="text-decoration: none;">
+                        <img src="img/2_iOS.png" class="vip_img">
+                        <p class="vip1">ios</p>
+                        <p class="vip2">51门课程</p>
+                    </a>
+                </div>
+                <div class="vip">
+                    <a href="/path/swift" style="text-decoration: none;">
+                        <img src="img/3_swift.png" class="vip_img">
+                        <p class="vip1">Swift语言</p>
+                        <p class="vip2">11门课程</p>
+                    </a>
+                </div>
+                <div class="vip">
+                    <a href="/path/html5" style="text-decoration: none;">
+                        <img src="img/4_html5.png" class="vip_img">
+                        <p class="vip1">HTML5开发</p>
+                        <p class="vip2">116门课程</p>
+                    </a>
+                </div>
+                <div class="vip">
+                    <a href="/path/javascript" style="text-decoration: none;">
+                        <img src="img/5_javascript.png" class="vip_img">
+                        <p class="vip1">JavaScript</p>
+                        <p class="vip2">90门课程</p>
+                    </a>
+                </div>
+                <div style="margin-right: -10px" class="vip">
+                    <a href="/path/nodejs" style="text-decoration: none;">
+                        <img src="img/6_js.png" class="vip_img">
+                        <p class="vip1">Node.js</p>
+                        <p class="vip2">90门课程</p>
+                    </a>
+                </div>
+            </div>
+            <div class="third">
+                <div class="vip">
+                    <a href="/path/c" style="text-decoration: none;">
+                        <img src="img/7_c.png" class="vip_img">
+                        <p class="vip1">C语言</p>
+                        <p class="vip2">17门课程</p>
+                    </a>
+                </div>
+                <div class="vip">
+                    <a href="/path/java" style="text-decoration: none;">
+                        <img src="img/8_java.png" class="vip_img">
+                        <p class="vip1">Java语言</p>
+                        <p class="vip2">17门课程</p>
+                    </a>
+                </div>
+                <div class="vip">
+                    <a href="/path/php" style="text-decoration: none;">
+                        <img src="img/9_php.png" class="vip_img">
+                        <p class="vip1">PHP语言</p>
+                        <p class="vip2">23门课程</p>
+                    </a>
+                </div>
+                <div class="vip">
+                    <a href="/path/javaweb" style="text-decoration: none;">
+                        <img src="img/10javaweb.png" class="vip_img">
+                        <p class="vip1">JavaWeb</p>
+                        <p class="vip2">64门课程</p>
+                    </a>
+                </div>
+                <div class="vip">
+                    <a href="/path/python" style="text-decoration: none;">
+                        <img src="img/11_Python.png" class="vip_img">
+                        <p class="vip1">Python</p>
+                        <p class="vip2">38门课程</p>
+                    </a>
+                </div>
+                <div style="margin-right: -10px" class="vip">
+                    <a href="/path/cocos2d-x" style="text-decoration: none;">
+                        <img src="img/12_cocos.png" class="vip_img">
+                        <p class="vip1">Cocos2d-x游戏开发</p>
+                        <p class="vip2">89门课程</p>
+                    </a>
+                </div>
+            </div>
+            <a class="vipall" href="/course/">全部会员课程</a>
+            <h2>学员故事</h2>
+            <div id="carousel-story" class="carousel slide carousel_1" data-ride="carousel">
+                <div class="carousel-inner" role="listbox">
+                    <div class="item">
+                        <div class="story-container">
+                            <div class="story">
+                                <a href="http://blog.jikexueyuan.com/2.html" target="_blank">
+                                    <div class="story-content">
+                                        <p>从房地产营销策划转行前端工程师。努力并不是为了证明自己多厉害，只是对自己生活方式的一种选择，每个人都可以通过自己的努力，去决定自己生活的样子。</p>
+                                    </div>
+                                    <div class="story-info">
+                                        <img src="http://wirrorcdn.jikexueyuan.com/v6/index-a/student-1-avatar.jpg">
+                                        <p>朱华宇</p>
+                                        <span>入职 极客学院</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="story">
+                                <a href="http://blog.jikexueyuan.com/3.html" target="_blank">
+                                    <div class="story-content">
+                                        <p>从浑浑噩噩的自动化专业学生，到大三暑假进入研究院实习。当时努力克服的那些困难，都成了现在自己的资本和财富。</p>
+                                    </div>
+                                    <div class="story-info">
+                                        <img src="http://wirrorcdn.jikexueyuan.com/v6/index-a/student-2-avatar.jpg">
+                                        <p>黄文俊</p>
+                                        <span>入职 深圳北斗技术应用研究院</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div style="margin-right:-5px" class="story">
+                                <a href="http://blog.jikexueyuan.com/4.html" target="_blank">
+                                    <div class="story-content">
+                                        <p>电力工程设计转前端，很感谢极客学院给了我理想的转行准备。以高密度锻炼的方式，逼迫自己尽快熟悉团队开发模式，顺利进入程序员的世界，接触到的新技术拓宽了我的眼界。</p>
+                                    </div>
+                                    <div class="story-info">
+                                        <img src="http://wirrorcdn.jikexueyuan.com/v6/index-a/student-3-avatar.jpg">
+                                        <p>王浩博</p>
+                                        <span>入职 北京中科软科技股份有限公司</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item active">
+                        <div class="story-container">
+                            <div class="story">
+                                <a href="http://blog.jikexueyuan.com/5.html" target="_blank">
+                                    <div class="story-content">
+                                        <p>爆炸力学硕士转安卓开发，回顾自己从爆炸力学走向代码世界的历程，感触良多。庆幸自己没有留在研究所，程序员不断学习不断进步的感觉更有意义。稳定绝不代表停滞，历练才是我们的财富。</p>
+                                    </div>
+                                    <div class="story-info">
+                                        <img src="http://wirrorcdn.jikexueyuan.com/v6/index-a/student-4-avatar.jpg">
+                                        <p>张少龙</p>
+                                        <span>入职 北京中航智科技</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="story">
+                                <a href="http://blog.jikexueyuan.com/6.html" target="_blank">
+                                    <div class="story-content">
+                                        <p>美女程序媛，从运维转岗到前端开发工程师。工作上的变化只是一部分，遇到极客学院更重要的是让我知道了自己的潜力，不被未来的不确定性吓倒，相信有目标，肯努力就可以得到想要的生活。</p>
+                                    </div>
+                                    <div class="story-info">
+                                        <img src="http://wirrorcdn.jikexueyuan.com/v6/index-a/student-5-avatar.jpg">
+                                        <p>杨帆</p>
+                                        <span>入职 深圳IBM</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div style="margin-right:-5px" class="story">
+                                <a href="http://blog.jikexueyuan.com/7.html" target="_blank">
+                                    <div class="story-content">
+                                        <p>Web大前端工程师就业班五期 03 班学员，某 985 大学信息与计算科学 2016 届毕业生，2 个月完成 16 个任务，被同班同学称为「大神」。2016 年拿到毕业证书的同时也拿到了 15K 高薪的 offer。</p>
+                                    </div>
+                                    <div class="story-info">
+                                        <img src="http://wirrorcdn.jikexueyuan.com/v6/index-a/student-6-avatar.jpg">
+                                        <p>路昕宇</p>
+                                        <span>入职 浪弯融科科技公司</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-story" data-slide-to="0"></li>
+                    <li data-target="#carousel-story" data-slide-to="1" class="active"></li>
+                </ol>
+            </div>
+        </div>
+    </div>
+    <!-- 主要内容end -->
+    <!-- 尾部star -->
+    <div class="footer">
+        <div class="subject">
+            <div class="jkinfor">
+                <div class="jk-logo">
+                    <img src="img/8.png">
+                    <p>极客学院，编程是一种信仰！</p>
+                </div>
+                <dl>
+                    <dt>职业学院</dt>
+                    <dd><a target="_blank" href="http://www.jikexueyuan.com/zhiye/web">Web前端工程师</a></dd>
+                    <dd><a target="_blank" href="http://www.jikexueyuan.com/zhiye/python">Python Web工程师</a></dd>
+                    <dd><a target="_blank" href="http://www.jikexueyuan.com/zhiye/go">Go语言工程师</a></dd>
+                    <dd><a target="_blank" href="http://www.jikexueyuan.com/zhiye/ios">iOS工程师</a></dd>
+                </dl>
+                <dl>
+                    <dt>会员课程</dt>
+                    <dd><a target="_blank" href="http://www.jikexueyuan.com/course/">课程库</a></dd>
+                    <dd><a target="_blank" href="http://www.jikexueyuan.com/path/">知识体系图</a></dd>
+                    <dd><a target="_blank" href="http://ke.jikexueyuan.com/zhiye/">职业路径图</a></dd>
+                    <dd><a target="_blank" href="http://ke.jikexueyuan.com/xilie/">系列课程</a></dd>
+                    <dd><a target="_blank" href="http://www.jikexueyuan.com/tag/">课程标签</a></dd>
+                </dl>
+                <dl>
+                    <dt>极客社区</dt>
+                    <dd><a target="_blank" href="http://wenda.jikexueyuan.com/">技术问答</a></dd>
+                    <dd><a target="_blank" href="http://wiki.jikexueyuan.com/">Wiki</a></dd>
+                    <dd><a target="_blank" href="http://download.jikexueyuan.com/">资源下载</a></dd>
+                    <dd><a target="_blank" href="http://qun.jikexueyuan.com/">社群</a></dd>
+                </dl>
+                <dl>
+                    <dt>其他</dt>
+                    <dd><a target="_blank" href="http://help.jikexueyuan.com/">关于我们</a></dd>
+                    <dd><a target="_blank" href="http://help.jikexueyuan.com/join.html">加入我们</a></dd>
+                    <dd><a target="_blank" href="http://press.jikexueyuan.com/evangelist/apply.html">讲师合作</a></dd>
+                    <dd><a target="_blank" href="http://help.jikexueyuan.com/contact.html">联系我们</a></dd>
+                    <dd><a target="_blank" href="http://www.jikexueyuan.com/friendlink.html">友情链接</a></dd>
+                </dl>
+                <div class="jk-down">
+                    <p class="hot-tel">服务热线:400-678-8266</p>
+                    <div class="dowcon iph">
+                        <img src="img/9.png"> iPhone
+                    </div>
+                    <div class="dowcon andd">
+                        <img src="img/9.png"> Android
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                Copyright © 2013-2016
+                <strong>
+                    <a href="http://www.jikexueyuan.com/" target="_blank">jikexueyuan.com</a>
+                </strong> All Rights Reserved. 京ICP备11018032号-8 京公网安备11010802020210
+                <a href="http://qun.jikexueyuan.com/jikexueyuan/topic/430" target="_blank" class="wechat"></a>
+                <a href="http://weibo.com/jikexueyuan" target="_blank" class="sina"></a>
+                <a style="display: block; margin:15px auto 0;" href="https://credit.szfw.org/CX20160908025320080267.html">
+                    <img src="img/10.png" width="60px">
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- 尾部end -->
+    <!-- go-top -->
+    <div class="gotop">
+        <span class="top"></span>
+        <a href="http://www.jikexueyuan.com/app">
+            <span class="jk-app">
+                <span class="appewm"></span>
+            </span>
+        </a>
+    </div>
+</body>
+
+</html>

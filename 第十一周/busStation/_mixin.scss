@@ -1,0 +1,16 @@
+@mixin steWra($height,$width:502px){
+  margin: 0 auto;
+  position: relative;
+  width: $width;
+  height: $height;
+}
+@mixin vetically($height,$line-height:$height){
+  height: $height;
+  line-height: $line-height;
+}
+
+@mixin box-sizing ($sizing:border-box) {
+  -webkit-box-sizing:$sizing;
+  -moz-box-sizing:$sizing;
+  box-sizing:$sizing;
+}

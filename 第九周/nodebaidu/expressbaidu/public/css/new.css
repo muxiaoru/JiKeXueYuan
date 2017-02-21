@@ -1,0 +1,164 @@
+.cf::before,
+.cf::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+html{
+	font-size: 62.5%;
+	font-family: arial;
+	height: 100%;
+}
+body{
+	height: 100%;
+}
+.container{
+	width: 100%;
+	height: 100%;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+}
+/**/
+
+header{
+	background: #4182f1 url(imgs/baidulogo.png) no-repeat center center;
+	background-size: 8rem;
+	padding: 0;
+	margin: 0;
+}
+header a{
+	display: block;
+	color: #fff;
+	height: 4.8rem;
+	line-height: 4.8rem;
+	margin:0 1rem;
+}
+header a:nth-child(1),header a:nth-child(2){
+	float: left;
+}
+header a:nth-child(3),header a:nth-child(4){
+	float: right;
+}
+header a .iconfont{
+	font-size: 2rem;
+}
+
+nav{
+	background: #4182f1;
+}
+nav ul{
+	margin:0;
+	padding: 0;
+	list-style: none;
+	font-size: 0;
+}
+nav ul li{
+	display: inline-block;
+	font-size: 1.44rem;
+	text-align: center;
+	/*width: 16.66%;*/
+}
+nav a{
+	display: inline-block;
+	color: #fff;
+	padding: 1rem 0;
+}
+nav ul i{
+	display: inline-block;
+	height: 1rem;
+	float: right;
+	border-right: 1px solid #5898f0;
+	position: relative;
+	top:1rem;
+}
+/*滚动框start*/
+.carousel{
+    height: 245px;
+	padding: 15px;
+}
+.scrollItem3,.scrollItem4,.scrollItem5,.scrollItem6,.scrollItem8,.scrollItem9{
+    height: 205px;
+}
+.carousel-indicators {
+	margin-left: 8%;
+}
+.carousel3{
+	margin-bottom: 0%;
+}
+.carousel-caption{
+	padding: 0;
+    margin-left: -10%;
+    margin-bottom: -3%;
+    text-align: left;
+    height: 28px;
+    line-height: 28px;
+    font-size: 16px;
+}
+.scrollItem0,.scrollItem2,.scrollItem3,.scrollItem4,.scrollItem5,.scrollItem6,.scrollItem8,.scrollItem9{
+	display: none;
+}
+.carousel-inner{
+	height: 223px;
+}
+.carousel-inner>.item{
+	height: 223px;
+}
+.caption3{
+	margin-bottom: 5%;
+}
+/*滚动框end*/
+.news-lists{
+	padding: 0 1.3rem;
+	margin: 1rem 0 0;
+	list-style: none;
+}
+.news-lists h1{
+    font-size: 1.6rem;
+    height: 57px;
+    overflow: hidden;
+    line-height: 20px;
+    margin: 0;
+}
+.news-list{
+	display: flex;
+	border-bottom: 1px solid #e6e6e6;
+	padding: 10px 0;
+	/*margin-top: 1rem;*/
+}
+.newsimg{
+	flex: 1;
+}
+.newsimg img{
+	width: 100%;
+	height: auto;
+}
+.newscontent{
+	flex: 2;
+    padding-left: 0.8rem;
+}
+.newscontent span{
+	display: inline-block;
+}
+.newscontent span:nth-child(2){
+	margin-left:.8rem;
+	border: 1px solid #ff0000;
+	border-radius:3px;
+	color: #ff0000;
+    padding: 0 0.2rem;
+}
+/*go-top*/
+.goTop{
+	position: fixed;
+    bottom: 150px;
+    right: 20px;
+    height: 52px;
+    width: 52px;
+    background: url(imgs/go-top.png) right center no-repeat;
+    display: block;
+    background-size: 100%;
+    z-index: 10;
+    display: none;
+}

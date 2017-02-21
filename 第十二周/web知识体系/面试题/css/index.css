@@ -1,0 +1,36 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+.ask{
+	width: 1300px;
+	margin: 0 auto;
+}
+.ht_cs,.js,.more{
+	width: 625px;
+	float: left;
+}
+h4{
+	font-weight: 700;
+}
+.js{
+	float: right;
+}
+.bg-primary{
+	font-size: 25px;
+}
+.bg-info,.bg-danger{
+	font-size: 18px;
+}
+li{
+	line-height: 25px;
+}
+pre {
+    padding: 16px;
+    overflow: auto;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: #f7f7f7;
+    border-radius: 3px;
+    word-wrap: normal;
+}

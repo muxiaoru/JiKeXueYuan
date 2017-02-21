@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>div+css布局</title>
+<style type="text/css">
+    *{
+    	margin: 0;
+    }
+    body{
+    	min-width: 500px;
+    }
+	.header{
+		background-color: blue;
+		height: 150px;
+		text-align: center;
+	}
+	.atricle{
+		background-color: orange;
+		height: 300px;
+		overflow: hidden;
+	}
+	.footer{
+		background-color: yellow;
+		height: 100px;
+		text-align: center;
+	}
+	.left{
+		background-color:#607d8b;
+		float: left;
+		color: white;
+		width: 200px;
+		margin-left: -100%;
+		margin-bottom: -9999px;
+		padding-bottom: 9999px;
+		position: relative;
+		left:-5px;
+		text-align: center;
+	}
+	.right{
+		background-color:#00ff1c;
+		width: 200px;
+	    float: right;
+        margin-left: -200px;
+        margin-bottom: -9999px;
+		padding-bottom: 9999px;
+		text-align: center;
+	}
+	.middle{
+		background-color:#ff0000;
+		width: 100%;
+		float: left;
+		margin-bottom: -9999px;
+		padding-bottom: 9999px;
+	}
+	.inner{
+		margin-left: 200px;
+		margin-right:200px;
+		text-align: center; 
+	}
+</style>
+</head>
+<body>
+<div class="header">
+	我是头
+</div>
+<div class="atricle">
+    <div class="middle">
+		     <div class="inner">
+		    	我是中间
+		    	<p>我是中间</p><p>我是中间</p><p>我是中间</p><p>我是中间</p><p>我是中间</p><p>我是中间</p><p>我是中间</p><p>我是中间</p><p>我是中间</p>
+		    </div>
+	</div> 
+    <div class="left">
+    	我是左
+    </div>
+    <div class="right">
+    	我是右
+    </div>   
+</div>
+<div class="footer">
+	我是尾 版权所有@
+</div>
+</body>
+</html>

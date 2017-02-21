@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>后台管理</title>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/admin.css">
+</head>
+<body>
+	<nav class="navbar navbar-default coston-nav" role="navigation">
+  		<div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+		    	<a style="color:#f3f3f3;" class="navbar-brand admin" href="#">后台管理系统</a>
+		    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      <ul class="nav navbar-nav navbar-right">
+		        <li class="dropdown">
+		          	<a href="#" style="color:#fdfdfd;" class="dropdown-toggle" data-toggle="dropdown">刘先生您好 <span class="caret"></span></a>
+		          	<ul class="dropdown-menu" role="menu">
+		            	<li><a href="login.html">退出</a></li>
+		          	</ul>
+		        </li>	        
+		      </ul>
+    		</div><!-- /.navbar-collapse -->
+  		</div><!-- /.container-fluid -->
+	</nav>
+	<div class="middle">
+		<div class="left-box">
+			<div class="panel-group" role="tablist">
+			    <div class="panel panel-default">
+			      <div class="panel-heading" role="tab" id="collapseListGroupHeading1">
+			        <h4 class="panel-title">
+			          <a class="collapsed" data-toggle="collapse" href="#collapseListGroup1" aria-expanded="false" aria-controls="collapseListGroup1" style="text-decoration: none;"> 
+			          <span class="glyphicon glyphicon-play"></span>
+			          概览  
+			          </a>
+			        </h4>	
+			      </div>
+			      <div id="collapseListGroup1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="collapseListGroupHeading1" aria-expanded="true">
+			        <ul class="list-group">
+			          <li class="list-group-item custom-active"><a href="h5.html">HTML5文档类型</a></li>
+			          <li class="list-group-item"><a href="mobile.html">移动设备优先</a></li>
+			          <li class="list-group-item"><a href="paiban.html">排版与链接</a></li>
+			          <li class="list-group-item"><a href="buju.html">栅格系统</a></li>
+			        </ul>
+			      </div>
+			    </div>
+			    <div class="panel panel-default">
+			      <div class="panel-heading" role="tab" id="collapseListGroupHeading1">
+			        <h4 class="panel-title">
+			          <a class="collapsed" data-toggle="collapse" href="#collapseListGroup2" aria-expanded="false" aria-controls="collapseListGroup2" style="text-decoration: none;"> 
+			          <span class="glyphicon glyphicon-play"></span>
+			          产品与服务  
+			          </a>
+			        </h4>
+			      </div>
+			      <div id="collapseListGroup2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="collapseListGroupHeading2" aria-expanded="false" style="height: 0px;">
+			        <ul class="list-group">
+			          <li class="list-group-item">云服务器ECS</li>
+			          <li class="list-group-item">云数据库 RDS版</li>
+			          <li class="list-group-item">负载均衡</li>
+			          <li class="list-group-item">对象存储 OSS</li>
+			          <li class="list-group-item">专有网络 VPC</li>
+			          <li class="list-group-item">访问控制</li>
+			          <li class="list-group-item">域名</li>
+			          <li class="list-group-item">服务器安全</li>
+			          <li class="list-group-item">态势感知</li>
+			        </ul>
+			      </div>
+			    </div>
+			    <div class="panel panel-default">
+			      <div class="panel-heading" role="tab" id="collapseListGroupHeading3">
+			        <h4 class="panel-title">
+			          <a class="collapsed" data-toggle="collapse" href="#collapseListGroup3" aria-expanded="false" aria-controls="collapseListGroup2" style="text-decoration: none;">
+			          <span class="glyphicon glyphicon-play"></span>
+			          用户中心 
+			          </a>
+			        </h4>
+			      </div>
+			      <div id="collapseListGroup3" class="panel-collapse collapse" role="tabpane3" aria-labelledby="collapseListGroupHeading3" aria-expanded="false" style="height: 0px;">
+			        <ul class="list-group">
+			          <li class="list-group-item">账号管理</li>
+			          <li class="list-group-item">费用中心</li>
+			          <li class="list-group-item">续费管理</li>
+			          <li class="list-group-item">消息中心</li>
+			          <li class="list-group-item">工单管理</li>
+			          <li class="list-group-item">备案管理</li>
+			        </ul>
+			      </div>
+			    </div>
+		  	</div>
+		</div>
+		<div class="right">
+			<div class="boot">
+				<span class="glyphicon glyphicon-home home"></span>
+				<a href="index.html" style="text-decoration: none;">首页</a>&nbsp;&nbsp;>&nbsp;&nbsp;<a style="text-decoration: none;" href="h5.html">概览</a>>&nbsp;&nbsp;HTML5文档类型
+				<input class="search" type="text" name="search" placeholder="Search...">
+			</div>
+			<div class="">
+				<h1>概览</h1><hr/>
+				<span>深入了解 Bootstrap 底层结构的关键部分，包括我们让 web 开发变得更好、更快、更强壮的最佳实践。</span>
+				<h3>HTML5 文档类型</h3>
+				<span>Bootstrap 使用到的某些 HTML 元素和 CSS 属性需要将页面设置为 HTML5 文档类型。在你项目中的每个页面都要参照下面的格式进行设置。</span>
+				<div class="h5">
+					<p class="cp">&lt;!DOCTYPE html&gt;</p>
+					<span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"zh-CN"</span><span class="nt">&gt;</span>
+				 	<p>...</p>
+					<p class="nt">&lt;/html&gt;</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	
+</body>
+</html>

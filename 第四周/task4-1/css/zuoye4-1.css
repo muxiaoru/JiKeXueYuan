@@ -1,0 +1,601 @@
+.header{
+	line-height: 10px;
+	height: 55px;
+	width: 100%;
+	background-color: #fff;
+}
+.picture{
+	margin-top: -13px;
+	margin-left: 11.5%;
+	float: left;
+}
+.navbar-default {
+    height: 60px;
+}
+.search-icon{
+	background: url(images/search-icon.png) no-repeat;
+	background-size: 17px 17px;
+	display: inline-block;
+    position: relative;
+    top: 18px;
+    height: 16px;
+    width: 16px;
+    cursor: pointer;
+}
+.search-icon:hover{
+	background: url(images/search-icon2.png) no-repeat;
+	background-size: 17px 17px;
+}
+.app-icon{
+	background:url(images/app-icon.png) no-repeat;
+    height: 16px;
+    width: 20px;
+    display: inline-block;
+    background-size: 17px;
+    margin-top: 3px;
+    margin-left:20px;
+}
+.app-icon:hover{
+	background:url(images/app-icon2.png) no-repeat;
+	 background-size: 17px;
+}
+.user{
+	background: url(images/login-icon.png) no-repeat;
+    height: 17px;
+    width: 16PX;
+    display: inline-block;
+    background-size: 17px;
+    margin-top: 2px;
+}
+.homepage{
+	font-size: 13px;
+	font-weight: bold; 
+	float:left;
+	position: relative;
+	left: 50px;
+	top: 20px;
+}
+/*导航栏*/
+.dropdown{
+	height: 57px;
+}
+.navbar-nav>li>a {
+    color: #333;
+}
+.dropdown-menu{
+	width: 280px;
+}
+.dropdown-menu span{
+	float: right;
+	color: #bbb;
+}
+.sub-title{
+	background-color: #f1f3f3;
+}
+.dropdown-menu span.engine{
+	font-size: 13px;
+	float: none;
+	height: 30px;
+    line-height: 30px;
+}
+.dropdown-menu h3{
+	font-size: 13px;
+	color: #827f7f;
+	margin: 3px -5px;
+}
+.dropdown-menu i{
+	background:url(images/allicon.png) no-repeat;
+	background-size: 64px 64px;
+	width: 14px;
+    height: 14px;
+    display: inline-block;
+    margin-right: 10px!important;
+}
+.dropdown-menu .web-icon{
+	background-position: -15px -27px;
+}
+.dropdown-menu i.python-icon, .dropdown-menu i.go-icon, .dropdown-menu i.ios-icon{
+	background:url(images/allicon3.png) no-repeat;
+	background-size: 16px 148px;
+}
+.dropdown-menu i.xlkc-icon {
+    background: url(images/xlkc2.png) no-repeat;
+    background-position: 0 0;
+    background-size: 12px 12px;
+}
+.dropdown-menu i.python-icon{
+	background-position: -2px -2px;
+}
+.dropdown-menu i.go-icon{
+	background-position: -2px -38px;
+}
+.dropdown-menu i.ios-icon{
+	background-position: -2px -82px;
+}
+.dropdown-menu i.kck-icon {
+    background-position: 0 -13px;
+}
+.dropdown-menu i.zyljt-icon {
+    background-position: -45px 0;
+}
+.dropdown-menu i.zstxt-icon {
+    background-position: -30px -13px;
+}
+.dropdown-menu i.kcbq-icon {
+    background-position: -15px -13px;
+}
+.dropdown-menu i.vip-icon {
+    background-position: -16px 0;
+}
+.dropdown-menu i.jswd-icon {
+    background-position: 0 -27px;
+}
+.dropdown-menu i.wiki-icon {
+    background-position: -29px -27px;
+}
+.dropdown-menu i.sq-icon {
+    background-position: 0 2px;
+}
+.dropdown-menu i.zyxz-icon {
+    background-position: -30px 0;
+}
+.arrow-icon {
+    width: 8px;
+    height: 8px;
+    border-top: 1px solid #c1c1c1;
+    border-left: 1px solid #c1c1c1;
+    display: inline-block;
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    -ms-transform: rotate(-135deg);
+    transform-origin: 4px 4px;
+    transition:all 1s ease-in-out;
+	-webkit-transition:all 1s ease-in-out;
+	-moz-transition:all 1s ease-in-out;
+	-o-transition:all 1s ease-in-out;
+}
+.dropdown:hover .arrow-icon{
+	transform:rotate(90deg);
+	-webkit-transform:rotate(405deg);
+	-moz-transform:rotate(405deg);
+	-o-transform:rotate(405deg);
+	-ms-transform:rotate(405deg);
+}
+.dropdown:hover .dropdown-menu{
+	display: block;
+}
+.dropdown .dropdown-menu li:hover a{
+	color: rgb(53, 181, 88);
+}
+.dropdown .dropdown-menu li:hover a>span{
+	color: rgb(53, 181, 88);
+}
+
+.dropdown:hover .menu{
+	color: rgb(53, 181, 88);
+}
+.search{
+	float: right;
+	left: -280px;
+	margin-top: 20px;
+	cursor: pointer;
+	color: #cfcfd6;
+}
+
+.middle{
+	margin: 0 auto;
+	width:1000px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.footer{
+	position: relative;
+	background-color:#fff;
+	padding: 20px 165px;
+	height: 295px;
+	width: 100%;
+}
+.dibian{
+    position: absolute;
+    bottom: 0px;
+    text-align: center;
+    font-size: 12px;
+    color: #999;
+    margin: 0 auto;
+    width: 1000px;
+}
+.gotop{
+	position: fixed;
+    right: 0px;
+    bottom: 55px;
+    margin: -16px 78px;
+}
+.top{
+	background: url(images/gotop.jpg) no-repeat;
+    cursor: pointer; 
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    background-size: 34px 103px;
+    position: relative;
+    top: -22px;
+    left: 3px;
+}
+.top:hover{
+	background: url(images/gotop2.jpg) no-repeat;
+	width: 34px;
+    height: 34px;
+    background-size: 34px 103px;
+}
+.phone-app{
+	background: #f7f7f7 url(images/phone-1.png) center center no-repeat;
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    background-size: 12px 24px;
+    position: relative;
+    top: -21px;
+    left: 3px;
+    border-bottom: 1px solid #e0e0e0;
+}
+.jk-app{
+    background: url(images/appewm.png);
+    position: absolute;
+    top: -70px;
+    left: -126px;
+    z-index: 1000;
+    width: 126px;
+    height: 159px;
+    background-size: 100%;
+    display: none;
+}
+.phone-app:hover .jk-app{
+	display: block;
+}
+.wechat{
+	position: relative;
+	width: 34px; 
+    left: -35px;
+}
+.down-icon{
+    height: 15px;
+    width: 20px;
+    float: right;
+    margin-left: 10px;
+    position: relative;
+    top: -48px;
+}
+.first{
+	float: left;
+}
+.second{
+	float: left;
+	position: relative;
+	left: 50px;
+	top:20px;
+	line-height:30px;
+}
+.second2{
+	list-style-type:none;
+	text-decoration:blink;
+	font-size: 12px;
+	font-weight: 400;
+}
+.second2 a{
+	color: #afb7b2;
+}
+.second2 li:hover a{
+	color: rgb(53, 181, 88);
+}
+.tel{
+	position: absolute;
+	right: 0;
+	top: 42px;
+	color: #8d948f;
+	font-weight: bold;
+}
+.phone-and{
+	width: 140px;
+    height: 30px;
+    border: 1px solid #f7f7f7;
+    float: right;
+    font-size: 13px;
+    font-weight: 100;
+}
+.down-ios{
+    width: 30px;
+    height: 30px;
+    float: left;
+}
+.down-android{
+	width: 30px;
+	height: 30px;
+    float: left;
+}
+.client{
+	text-align:center;
+	border:1px solid #f0f0f0; 
+	padding-top: 20px;
+}
+.skuContainer{
+	padding: 14px;
+	height: 110px;
+	position: relative;
+	background: #fff;
+	border:1px solid #ecdede;
+	width: 222px;
+	font-weight: bold;
+}
+.skuTitle{
+	width: 100%;
+	overflow: hidden;
+	font-size: 12px;
+	color: #555;
+	line-height: 18px;
+	height: 36px;
+}
+.skuInfo{
+	margin-top: 6px;
+	color: #999;
+	font-size: 12px;
+	line-height: 1px;
+	height: 16px;
+}
+.skuPrice{
+	float: left;
+	font-size: 18px;
+	color: #ff5c00;
+	vertical-align: bottom;
+	margin-right: 5px;
+}
+.skuThrought{
+	float: left;
+	font-size: 12px;
+	color: #999;
+	margin-top: 4px;
+	text-decoration: line-through;
+	vertical-align: bottom;
+}
+.skuNum{
+	display: inline-block;
+	height: 14px;
+	position: absolute;
+	bottom: 5px;
+	right: 24px;
+	color: #999;
+	font-size: 12px;
+}
+.school{
+	position: absolute;
+	top: -6px;
+	left: 187px;
+	font-size: 20px;
+	font-weight: bold;
+	color: #f1f1f1;
+	background: url(images/cweb.png) no-repeat center;
+	padding-top: 187px;
+	background-size: 50px;
+}
+.python{
+	background: url(images/cpython.png) no-repeat center;
+	background-size: 33px;
+	padding-top: 105px;
+	font-size: 14px;
+	font-weight: bold;
+	position: absolute;
+	left: 70px;
+	top: -25px;
+	color: #f1f1f1;
+}
+.go{
+	background: url(images/cgo.png) no-repeat center;
+	background-size: 33px;
+	position: absolute;
+	top: -25px;
+	left: 89px;
+	padding-top: 105px;
+	font-size: 14px;
+	font-weight: bold;
+	color: #f1f1f1;
+}
+.ios{
+	background: url(images/cios.png) no-repeat center;
+	background-size: 33px;
+	position: absolute;
+	top: -25px;
+	left: 102px;
+	padding-top: 107px;
+	font-size: 14px;
+	font-weight: bold;
+	color: #f1f1f1;
+}
+.more{
+	background: url(images/cmore.png) no-repeat center;
+	background-size: 33px;
+	position: absolute;
+	top: -25px;
+	left: 80px;
+	padding-top: 105px;
+	font-size: 14px;
+	font-weight: bold;
+	color: #f1f1f1;
+}
+
+/*会员课程*/
+.vip{
+	height:160px;
+	background-color:#fff;
+	border:5px solid #f1f1f1;
+}
+.vip_img{
+	width:55px;
+	height:55px;
+	margin-top:27px;
+}
+.vip1{
+	color: #555;
+	margin: 0 0 5px;
+	font-size: 12px;
+}
+.vip2{
+	color: #35b558;
+	margin: 0 0 5px;
+	font-size: 12px;
+}
+.vipall{
+	border: 1px solid #35b558;
+	border-radius: 2px;
+	color: #35b558;
+	font-weight: bold;
+	padding: 2px 12px;
+	display: inline-block;
+	margin-top: 30px;
+	margin-left: -55px;
+	position: relative;
+	left: 50%;    
+}
+/*学员故事*/
+.story-container{
+	width: 100%;
+	height: 260px;
+	position: relative;
+	overflow: hidden;
+}
+
+.story{
+	width: 320px;
+	height: 200px;
+	position: relative;
+}
+
+.story a:hover .story-content {
+	width: 100%;
+	height: 121px;
+	border: 1px solid #e9e9e9;
+	background: #fff;
+	position: relative;
+	-moz-box-shadow:-2px 0px 3px #e9e9e9, 2px 2px 3px #e9e9e9;
+	-webkit-box-shadow:-2px 0px 3px #e9e9e9, 2px 2px 3px #e9e9e9;
+	box-shadow:-2px 0px 3px #e9e9e9, 2px 2px 3px #e9e9e9;
+}
+
+.story-content {
+	width: 100%;
+	height: 121px;
+	border: 1px solid #e9e9e9;
+	background: #fff;
+	position: relative;
+}
+
+.story-content:before {
+	content: '';
+	display: inline-block;
+	width: 0;
+	height: 0;
+	border-top: 12px solid #fff;
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+	position: absolute;
+	bottom: -12px;
+	left: 46px;
+}
+
+
+.story-content p {
+	height: 100%;
+	overflow: hidden;
+	font-size: 12px;
+	color: #555;
+	line-height: 20px;
+	padding: 20px 25px;
+	text-align: left;
+}
+
+.story-content p:before {
+	content: '';
+	display: inline-block;
+	width: 14px;
+	height: 10px;
+	background: url(http://s1.jikexueyuan.com/index/images/storyicon_4a5e270.png) no-repeat center;
+	background-size: 14px 10px;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+}
+
+.story-content p:after {
+	content: '';
+	display: inline-block;
+	width: 14px;
+	height: 10px;
+	background: url(http://s1.jikexueyuan.com/index/images/storyicon_4a5e270.png) no-repeat center;
+	background-size: 14px 10px;
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+}
+
+.story-info {
+	height: 80px;
+	padding-left: 95px;
+	padding-top: 28px;
+	position: relative;
+}
+.story-info img {
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	border: 1px solid #e9e9e9;
+}
+
+.story-info p {
+	font-size: 12px;
+	color: #555;
+	height: 24px;
+	line-height: 24px;
+	overflow: hidden;
+	text-align: left;
+}
+
+.story-info span {
+	display: block;
+	height: 24px;
+	line-height: 24px;
+	color: #999;
+	font-size: 12px;
+	text-align: left;
+}
+.story-pagination {
+	position: absolute;
+	left: 0;
+	bottom: 16px;
+	text-align: center;
+	width: 100%;
+	z-index: 800;
+	height: 0;
+	cursor: pointer;
+}
+.story-pagination .swiper-active-switch {
+	height: 8px;
+	width: 16px;
+	background: #35b558;
+}
+.story-pagination .swiper-pagination-switch {
+	display: inline-block;
+	margin-right: 8px;
+	text-align: center;
+	width: 8px;
+	height: 8px;
+	background: #bbb;
+	vertical-align: middle;
+	cursor: pointer;
+}

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>3D魔方</title>
+    <style>
+        html, body, div, span,
+        h1, h2, h3, h4, h5, h6, p
+        a, img, ol, ul, li
+        {
+            margin:0;padding:0;border:0;outline:0;
+        }
+      #cube{
+          position: relative;
+          margin:100px auto;
+          height:200px;
+          width:200px;
+          -webkit-transform-style:preserve-3d;
+          -moz-transform-style:preserve-3d;
+          transform-style:preserve-3d;
+          -webkit-animation-name:animations;
+          -moz-animation-name:animations;
+          animation-name:animations;
+          -webkit-animation-timing-function:ease-in-out;
+          -moz-animation-timing-function:ease-in-out;
+          animation-timing-function:ease-in-out;
+          -webkit-animation-iteration-count:infinite;
+          -moz-animation-iteration-count:infinite;
+          animation-iteration-count:infinite;
+          -webkit-animation-duration:3s;
+          -moz-animation-duration:3s;
+          animation-duration:3s;
+          -webkit-transform-origin:78px 78px -78px;
+          -moz-transform-origin:78px 78px -78px;
+          transform-origin:78px 78px -78px;
+      }
+      .face{
+          position:absolute;
+          height:156px;
+          width:156px;
+        }
+
+       #face1 {
+           background-color: transparent;
+       }
+       #face2 {
+           background-color:transparent;
+           -webkit-transform-origin:right;
+           -webkit-transform: rotateY(-90deg);
+           -moz-transform-origin:right;
+           -moz-transform: rotateY(-90deg);
+           transform-origin:right;
+           transform: rotateY(-90deg);
+       }
+       #face3 {
+           background-color: transparent;
+           -webkit-transform-origin:left;
+           -webkit-transform: rotateY(90deg);
+            -moz-transform-origin:left;
+           -moz-transform: rotateY(90deg);
+           transform-origin:left;
+           transform: rotateY(90deg);
+       }
+       #face4 {
+           background-color: transparent;
+           -webkit-transform-origin:top;
+           -webkit-transform: rotateX(-90deg);
+            -moz-transform-origin:top;
+           -moz-transform: rotateX(-90deg);
+           transform-origin:top;
+           transform: rotateX(-90deg);
+       }
+       #face5 {
+           background-color:transparent;
+           -webkit-transform-origin:bottom;
+           -webkit-transform: rotateX(90deg);
+           -moz-transform-origin:bottom;
+           -moz-transform: rotateX(90deg);
+           transform-origin:bottom;
+           transform: rotateX(90deg);
+       }
+       #face6 {
+           background-color:transparent;
+           -webkit-transform: translateZ(-156px);
+           -moz-transform: translateZ(-156px);
+           transform: translateZ(-156px);
+       }
+       @-webkit-keyframes animations{
+        from {-webkit-transform:rotateZ(0deg) rotateY(0deg) rotateX(0deg);}
+        to {-webkit-transform:rotateZ(360deg) rotateY(360deg) rotateX(360deg);}
+      }
+      @-moz-keyframes animations{
+        from {-moz-transform:rotateZ(0deg) rotateY(0deg) rotateX(0deg);}
+        to {-moz-transform:rotateZ(360deg) rotateY(360deg) rotateX(360deg);}
+      }
+      @keyframes animations{
+        from {transform:rotateZ(0deg) rotateY(0deg) rotateX(0deg);}
+        to {transform:rotateZ(360deg) rotateY(360deg) rotateX(360deg);}
+      }
+    .little-block{
+        width: 50px;
+        height: 50px;
+        border: 1px solid;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius:10px;
+        float: left; 
+    }
+   
+</style>
+</head>
+<body>
+ <div id="experiment">
+    <div id="cube">
+        <div class="face" id="face1">
+            <div class="little-block" style="background-color: #03a9f4"></div>
+            <div class="little-block" style="background-color: #03a9f4"></div>
+            <div class="little-block" style="background-color: #03a9f4"></div>
+            <div class="little-block" style="background-color: #03a9f4"></div>
+            <div class="little-block" style="background-color: #03a9f4"></div>
+            <div class="little-block" style="background-color: #03a9f4"></div>
+            <div class="little-block" style="background-color: #03a9f4"></div>
+            <div class="little-block" style="background-color: #03a9f4"></div>
+            <div class="little-block" style="background-color: #03a9f4"></div>
+        </div>
+        <div class="face" id="face2">
+            <div class="little-block" style="background-color: #03f43f"></div>
+            <div class="little-block" style="background-color: #03f43f"></div>
+            <div class="little-block" style="background-color: #03f43f"></div>
+            <div class="little-block" style="background-color: #03f43f"></div>
+            <div class="little-block" style="background-color: #03f43f"></div>
+            <div class="little-block" style="background-color: #03f43f"></div>
+            <div class="little-block" style="background-color: #03f43f"></div>
+            <div class="little-block" style="background-color: #03f43f"></div>
+            <div class="little-block" style="background-color:#03f43f"></div>
+        </div>
+        <div class="face" id="face3">
+           <div class="little-block" style="background-color: #f4036a"></div>
+            <div class="little-block" style="background-color: #f4036a"></div>
+            <div class="little-block" style="background-color: #f4036a"></div>
+            <div class="little-block" style="background-color: #f4036a"></div>
+            <div class="little-block" style="background-color: #f4036a"></div>
+            <div class="little-block" style="background-color: #f4036a"></div>
+            <div class="little-block" style="background-color: #f4036a"></div>
+            <div class="little-block" style="background-color: #f4036a"></div>
+            <div class="little-block" style="background-color:#f4036a"></div>
+        </div>
+        <div class="face" id="face4">
+            <div class="little-block" style="background-color: #f4ea03"></div>
+            <div class="little-block" style="background-color: #f4ea03"></div>
+            <div class="little-block" style="background-color: #f4ea03"></div>
+            <div class="little-block" style="background-color: #f4ea03"></div>
+            <div class="little-block" style="background-color: #f4ea03"></div>
+            <div class="little-block" style="background-color: #f4ea03"></div>
+            <div class="little-block" style="background-color: #f4ea03"></div>
+            <div class="little-block" style="background-color: #f4ea03"></div>
+            <div class="little-block" style="background-color:#f4ea03"></div>
+        </div>
+        <div class="face" id="face5">
+            <div class="little-block" style="background-color: #4caf50"></div>
+            <div class="little-block" style="background-color: #4caf50"></div>
+            <div class="little-block" style="background-color: #4caf50"></div>
+            <div class="little-block" style="background-color: #4caf50"></div>
+            <div class="little-block" style="background-color: #4caf50"></div>
+            <div class="little-block" style="background-color: #4caf50"></div>
+            <div class="little-block" style="background-color: #4caf50"></div>
+            <div class="little-block" style="background-color: #4caf50"></div>
+            <div class="little-block" style="background-color:#4caf50"></div>
+        </div>
+        <div class="face" id="face6">
+            <div class="little-block" style="background-color: #9959af"></div>
+            <div class="little-block" style="background-color: #9959af"></div>
+            <div class="little-block" style="background-color: #9959af"></div>
+            <div class="little-block" style="background-color: #9959af"></div>
+            <div class="little-block" style="background-color: #9959af"></div>
+            <div class="little-block" style="background-color: #9959af"></div>
+            <div class="little-block" style="background-color: #9959af"></div>
+            <div class="little-block" style="background-color: #9959af"></div>
+            <div class="little-block" style="background-color:#9959af"></div>
+        </div>
+    </div>
+</div>
+</body></html>          

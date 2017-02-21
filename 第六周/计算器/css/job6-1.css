@@ -1,0 +1,53 @@
+body{
+	padding: 0;
+	margin: 0;
+}
+.myDiv{
+	width: 800px;
+	height: 700px;
+	margin: 0 auto;
+}
+.img{
+	height: 500px;
+	background: url(img/siverbg.png) no-repeat;
+	position: relative;
+	left: 25%;
+	top:30px;
+}
+.outcome{
+	position: relative;
+    left: 14px;
+    top: 15px;
+    width: 407px;
+    height: 60px;
+    text-align: right;
+    display: table-cell;
+    vertical-align: bottom;
+    font-size: 30px;
+    font-weight: 900;
+}
+.con{
+    width: 407px;
+    height: 316px;
+    position: relative;
+    left: 15px;
+    top: 57px;
+}
+.btn{
+	width: 94px;
+    height: 44px;
+    border: 0px;
+    border-radius: 5px;
+    background:url(img/d1btn.gif);
+    background-position: 0px 44px;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+    margin-bottom: 9px;
+}
+#btn2{
+	background:url(img/d2btn.gif);
+}
+#btn4{
+	background:url(img/d4btn.gif);
+}
